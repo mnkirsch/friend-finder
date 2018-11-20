@@ -25,18 +25,6 @@ module.exports = function(app){
 
 		res.json(chosenMatch);
 		friendData.push(req.body);
-
-/*
-		if(tableData.length < 5 ){
-			tableData.push(req.body);
-			res.json(true); // KEY LINE
-		}
-		// Or false if they don't have a table
-		else{
-			waitListData.push(req.body);
-			res.json(false); // KEY LINE
-		}
-*/
 	});
 
 	app.post('/api/clear', function(req, res){
